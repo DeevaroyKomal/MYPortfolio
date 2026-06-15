@@ -38,7 +38,7 @@ const Resume = () => {
         {/* Download Button */}
         <div className="flex justify-center mb-10">
           <a
-            href="./src/assets/Resume.pdf"
+            href="./src/assets/KomalResume.pdf"
             download
             className="flex items-center gap-2 px-6 py-3 rounded-lg bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300"
           >
