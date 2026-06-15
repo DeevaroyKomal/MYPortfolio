@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { useTheme } from "../context/Theme/ThemeContext";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { img } from "framer-motion/client";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.jpg";
+import image3 from "../assets/image3.jpg";
+import image4 from "../assets/image4.jpg";
+import image5 from "../assets/image5.jpg";
+
 
 const Work = () => {
   const { theme } = useTheme();
@@ -20,36 +26,36 @@ const Work = () => {
     {
       title: "Crypto-Hunt",
       desc: "A Full-Stack Cryptocurrency Analysis and Prediction System Using Machine Learning",
-      img: "./src/assets/image2.jpg",
+      img: image2,
       git: "https://github.com/DeevaroyKomal/crypto-hunt",
       tech: ["React", "Python", "Firebase", "Flask API"],
     },
     {
       title: "Detection Window",
       desc: "An AI Based Detection Window uses your webcam to detect objects in real-time.",
-      img: "./src/assets/image4.jpg",
+      img: image4,
       git: "https://github.com/DeevaroyKomal/Project",
       tech: ["NextJS 14", "Tailwind CSS", "TensorFlow.js"],
     },
     {
       title: "Virtual Medical Assistant",
       desc: "AI-powered Image Analysis for detecting medical conditions  along with a chatbot integration for answering health-related queries.",
-      img: "./src/assets/image1.jpg",
+      img: image1,
       git: "https://github.com/DeevaroyKomal/Coding-Aspirants",
       tech: ["Python", "Gemini AI", "Streamlit"],
     },
     {
       title: "Task Management Application",
       desc: "A simple and interactive web-based Task Manager that helps users organize their daily activities efficiently.",
-      img: "./src/assets/image3.jpg",
+      img: image3,
       git: "https://github.com/KomalDeevaoy/TaskManagerApp",
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "My Portfolio",
       desc: "A website in which I showcase my projects, skills, and passion for building impactful web experiences.",
-      img: "./src/assets/image5.jpg",
-      git: " ",
+      img: image5,
+      git: "https://github.com/DeevaroyKomal/MYPortfolio ",
       tech: ["React", "Framer Motion", "Tailwind"],
     },
   ];
