@@ -101,7 +101,7 @@ const Home = () => {
                 } shadow-2xl`}
             >
               <img
-                src=".\src\assets\IMG.jpg"
+                src=".\src\assets\sampleimg.jpg"
                 alt="Deevaroy Komal"
                 className="w-full h-full object-cover"
               />
