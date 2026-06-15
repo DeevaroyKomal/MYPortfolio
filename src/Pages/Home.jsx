@@ -6,6 +6,7 @@ import {
   FaGraduationCap,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import img from "../assets/sampleimg.jpg";
 
 
 const Home = () => {
@@ -101,7 +102,7 @@ const Home = () => {
                 } shadow-2xl`}
             >
               <img
-                src=".\src\assets\sampleimg.jpg"
+                src={img}
                 alt="Deevaroy Komal"
                 className="w-full h-full object-cover"
               />
