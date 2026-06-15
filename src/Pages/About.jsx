@@ -1,6 +1,10 @@
 import React from "react";
 import { useTheme } from "../context/Theme/ThemeContext";
 import { FaArrowRight } from "react-icons/fa";
+import csa from "../assets/CSA.jpg";
+import youngTurks from "../assets/YoungTurks.jpg";
+import oracle from "../assets/oracle.jpg";
+import contributor from "../assets/contributor.jpg";
 
 const About = () => {
   const { theme } = useTheme();
@@ -81,7 +85,7 @@ const About = () => {
 
           <div className="space-y-12">
 
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
 
               <div className="flex-1">
                 <h3 className={`text-2xl font-bold mb-2 ${headingColor}`}>
@@ -96,14 +100,14 @@ const About = () => {
 
               <div className="shrink-0">
                 <img
-                  src="./src/assets/CSA.jpg"
+                  src={csa}
                   alt="CSA Certificate"
-                  className="w-72 rounded-xl shadow-lg border border-purple-200"
+                  className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg border border-purple-200"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
 
               <div className="flex-1">
                 <h3 className={`text-2xl font-bold mb-2 ${headingColor}`}>
@@ -118,14 +122,14 @@ const About = () => {
 
               <div className="shrink-0">
                 <img
-                  src="./src/assets/YoungTurks.jpg"
+                  src={youngTurks}
                   alt="YoungTurks Certificate"
-                  className="w-72 rounded-xl shadow-lg border border-purple-200"
+                  className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg border border-purple-200"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
 
               <div className="flex-1">
                 <h3 className={`text-2xl font-bold mb-2 ${headingColor}`}>
@@ -140,14 +144,14 @@ const About = () => {
 
               <div className="shrink-0">
                 <img
-                  src="./src/assets/oracle.jpg"
+                  src={oracle}
                   alt="Oracle Certificate"
-                  className="w-72 rounded-xl shadow-lg border border-purple-200"
+                  className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg border border-purple-200"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
 
               <div className="flex-1">
                 <h3 className={`text-2xl font-bold mb-2 ${headingColor}`}>
@@ -162,9 +166,9 @@ const About = () => {
 
               <div className="shrink-0">
                 <img
-                  src="./src/assets/contributor.jpg"
-                  alt="CSA Certificate"
-                  className="w-72 rounded-xl shadow-lg border border-purple-200"
+                  src={contributor}
+                  alt="Contributor Certificate"
+                  className="w-full max-w-xs md:max-w-sm rounded-xl shadow-lg border border-purple-200"
                 />
               </div>
             </div>
