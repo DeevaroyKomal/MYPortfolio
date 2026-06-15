@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "../context/Theme/ThemeContext";
-import { Link } from "react-router-dom";
 
 const categories = [
   {
@@ -93,7 +92,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {categories.map((category, idx) => (
             <div
               key={category.title}
@@ -141,48 +140,9 @@ const Skills = () => {
           ))}
         </div>
 
-        <div
-          className={`text-center mt-16 opacity-0 animate-fade-in`}
-          style={{ animationDelay: "2.1s", animationFillMode: "forwards" }}
-        >
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link to="/work">
-              <button className="bg-purple-600 cursor-pointer hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                View My Projects
-              </button>
-            </Link>
-
-            <Link to="/connect">
-              <button
-                className={`${
-                  isDark
-                    ? "border-2 border-purple-400 text-purple-400 hover:bg-purple-950"
-                    : "border-2 border-purple-600 text-purple-600 hover:bg-purple-50"
-                } px-8 py-4 cursor-pointer rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1`}
-              >
-                Let's Collaborate
-              </button>
-            </Link>
-          </div>
-        </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out;
-        }
-      `}</style>
+      
     </div>
   );
 };
