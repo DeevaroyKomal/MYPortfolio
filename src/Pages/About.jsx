@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { useTheme } from "../context/Theme/ThemeContext";
 import { FaArrowRight } from "react-icons/fa";
+
 import csa from "../assets/CSA.jpg";
 import youngTurks from "../assets/YoungTurks.jpg";
 import oracle from "../assets/oracle.jpg";
@@ -182,15 +185,13 @@ const About = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/work"
-              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 ${isDark
-                ? "bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-600/50"
-                : "bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-600/30"
+            <Link
+                to="/work"
+                className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 ${isDark? "bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-600/50" : "bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-purple-600/30"
                 }`}
             >
-              View My Projects <FaArrowRight className="text-sm" />
-            </a>
+            View My Projects <FaArrowRight className="text-sm" />
+          </Link>
           </div>
         </div>
       </div>
